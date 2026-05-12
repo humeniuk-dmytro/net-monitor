@@ -1,14 +1,14 @@
 from pydantic_settings import BaseSettings
+from pydantic import ConfigDict
 from functools import lru_cache
 
 
 class Settings(BaseSettings):
+    model_config = ConfigDict(env_file=".env")
+
     database_url: str = "postgresql+asyncpg://postgres:postgres@db:5432/netmonitor"
     sync_database_url: str = "postgresql+psycopg2://postgres:postgres@db:5432/netmonitor"
     ping_interval_seconds: int = 30
-
-    class Config:
-        env_file = ".env"
 
 
 @lru_cache
