@@ -1,5 +1,7 @@
 # Network Latency Monitor
 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://net-monitor-1.onrender.com/docs)
+
 [![CI](https://github.com/humeniuk-dmytro/net-monitor/actions/workflows/ci.yml/badge.svg)](https://github.com/humeniuk-dmytro/net-monitor/actions)
 ![Python](https://img.shields.io/badge/python-3.12-blue)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -36,6 +38,8 @@ docker compose up --build
 \`\`\`
 
 API available at http://localhost:8000/docs
+
+Or try the live API: https://net-monitor-1.onrender.com/docs
 
 ## API examples
 

@@ -17,7 +17,7 @@ async def ping_host(hostname: str) -> tuple[float | None, str]:
         )
         stdout, _ = await asyncio.wait_for(proc.communicate(), timeout=5)
         output = stdout.decode()
-        match = re.search(r"time[=<]([d.]+)s*ms", output)
+        match = re.search(r"time[=<]([\d.]+)\s*ms", output)
         if proc.returncode == 0 and match:
             return float(match.group(1)), "ok"
         return None, "timeout"
