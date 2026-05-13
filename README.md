@@ -8,6 +8,10 @@
 
 > Monitor network latency to multiple hosts via REST API. Schedules ICMP pings, stores results in PostgreSQL, exposes stats endpoints.
 
+## 📸 Demo
+
+![Swagger UI](docs/swagger.png)
+
 ## Why this project
 
 Built to practice production-grade Python backend development: async FastAPI, SQLAlchemy 2.0, background scheduling, Docker Compose, and CI/CD.
